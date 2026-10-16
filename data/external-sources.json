@@ -1,0 +1,26 @@
+[
+  {
+    "id": "EXT-Wheat-KGCA",
+    "title": "Wheat-KGCA",
+    "url": "https://github.com/zhanghaodong99/Wheat-KGCA",
+    "revision": "3ee605c17ca8f4ff0721a8ae42a49ff6365cacd5",
+    "role": "外部研究成果：专家知识与视觉语义融合的生育期识别",
+    "license_note": "上游根级许可元数据未声明，集成前须核对许可、数据和权重"
+  },
+  {
+    "id": "EXT-FieldBCQ",
+    "title": "FieldBCQ",
+    "url": "https://github.com/huozhongsongtan/FieldBCQ",
+    "revision": "bb34a441b813f6795dea65e3ae6ce34c8251668b",
+    "role": "外部研究成果：地块边界实例分割与质量校准",
+    "license_note": "上游包含许可证信息但需按整体项目、数据、权重和改动复核"
+  },
+  {
+    "id": "EXT-topics",
+    "title": "农业开放课题",
+    "url": "https://agri-openharmony.lpkhbj.com/topics.html",
+    "revision": "网页快照 cdecddf",
+    "role": "研究课题来源；公开版保留本负责人负责方向",
+    "license_note": "课题状态需以团队立项和里程碑为准"
+  }
+]

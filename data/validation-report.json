@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "scope": "public portfolio consistency check",
+  "counts": {
+    "technology_areas": 10,
+    "topics": 16,
+    "ip": 11,
+    "sources": 3,
+    "visuals": 7
+  },
+  "errors": []
+}

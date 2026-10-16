@@ -1,0 +1,5 @@
+split,images,instances,notes,evidence
+train,12000,353352,"training split","EXT-FieldBCQ public README"
+validation,1000,28657,"validation split","EXT-FieldBCQ public README"
+test,2000,21190,"test split; includes 83 empty-label images","EXT-FieldBCQ public README"
+total,15000,403199,"26 countries; 8 sensor resolutions","EXT-FieldBCQ public README"

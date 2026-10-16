@@ -1,0 +1,5 @@
+method,precision,recall,f1,map50,map75,map50_95,mean_std,test_images,test_instances,evidence
+Baseline,0.663,0.600,0.630,0.611,0.400,0.390,"reported ± std",2000,21190,"EXT-FieldBCQ public report"
+PCSC,0.672,0.606,0.637,0.622,0.411,0.400,"reported ± std",2000,21190,"EXT-FieldBCQ public report"
+BAPS+PCSC,0.673,0.614,0.642,0.628,0.415,0.405,"reported ± std",2000,21190,"EXT-FieldBCQ public report"
+FieldBCQ,0.694,0.615,0.652,0.640,0.434,0.420,"reported ± std",2000,21190,"EXT-FieldBCQ public report"
