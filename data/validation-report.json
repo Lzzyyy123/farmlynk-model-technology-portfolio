@@ -3,8 +3,9 @@
   "scope": "public portfolio consistency check",
   "counts": {
     "technology_areas": 10,
-    "topics": 16,
+    "topics": 17,
     "ip": 11,
+    "model_inventory": 15,
     "sources": 3,
     "visuals": 7
   },

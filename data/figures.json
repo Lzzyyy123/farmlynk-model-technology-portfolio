@@ -1,9 +1,9 @@
 [
-  {"id":"01-platform-landscape","title":"农业智能技术全景","file":"assets/visuals/01-platform-landscape.png","stage":"能力全景","next":"统一评测、产品承接和证据补齐","source":"本版公开信息图"},
-  {"id":"02-remote-sensing","title":"遥感质量与地块洞察","file":"assets/visuals/02-remote-sensing.png","stage":"工程候选到试点","next":"清晰锚点、跨区域评测、质量协议","source":"本版公开信息图"},
-  {"id":"03-agent","title":"农业智能体与知识服务","file":"assets/visuals/03-agent.png","stage":"工程骨架","next":"固定问集、工具评测、证据门禁","source":"本版公开信息图"},
-  {"id":"04-recognition","title":"农资与测土报告识别","file":"assets/visuals/04-recognition.png","stage":"服务化候选","next":"字段真值、正确留空、批量评测","source":"本版公开信息图"},
-  {"id":"05-land-assessment","title":"地块评估与风险解释","file":"assets/visuals/05-land-assessment.png","stage":"原型联调","next":"专家一致性、评分版本、真实回执","source":"本版公开信息图"},
-  {"id":"06-research-to-product","title":"研究成果如何进入产品","file":"assets/visuals/06-research-to-product.png","stage":"研究成果","next":"许可、复现、区域盲测、受控试点","source":"本版公开信息图"},
-  {"id":"07-ip-and-roadmap","title":"知识产权与研发路线","file":"assets/visuals/07-ip-and-roadmap.png","stage":"台账与核验","next":"权利要求、许可、产品验收映射","source":"本版公开信息图"}
+  {"id":"01-platform-landscape","title":"农业模型技术全景","files":["assets/visuals/01-platform-landscape.png","assets/visuals/01-platform-landscape.svg"],"formats":["png","svg"],"stage":"工程基础、能力资产、受控试点","next":"统一评测、产品承接与现场回执","source":"本版公开信息图"},
+  {"id":"02-remote-sensing","title":"遥感质量与地块洞察","files":["assets/visuals/02-remote-sensing.png","assets/visuals/02-remote-sensing.svg"],"formats":["png","svg"],"stage":"已有产品链路，跨区验证待补","next":"清晰锚点、日期留出、面积/剂量守恒","source":"本版公开信息图"},
+  {"id":"03-agent","title":"农业智能体与知识服务","files":["assets/visuals/03-agent.png","assets/visuals/03-agent.svg"],"formats":["png","svg"],"stage":"工程骨架与场景原型","next":"固定问集、工具评测、证据门禁","source":"本版公开信息图"},
+  {"id":"04-recognition","title":"出苗、杂草、病虫害与多模态识别","files":["assets/visuals/04-recognition.png","assets/visuals/04-recognition.svg"],"formats":["png","svg"],"stage":"专利、能力资产与服务候选并存","next":"独立真值、空间化和任务层验收","source":"本版公开信息图"},
+  {"id":"05-land-assessment","title":"地块评估与风险解释","files":["assets/visuals/05-land-assessment.png","assets/visuals/05-land-assessment.svg"],"formats":["png","svg"],"stage":"原型联调","next":"专家一致性、评分版本、真实回执","source":"本版公开信息图"},
+  {"id":"06-research-to-product","title":"研究成果如何进入产品","files":["assets/visuals/06-research-to-product.png","assets/visuals/06-research-to-product.svg"],"formats":["png","svg"],"stage":"研究结果待独立复现","next":"许可、区域盲测、受控试点","source":"本版公开信息图"},
+  {"id":"07-ip-and-roadmap","title":"知识产权与研发路线","files":["assets/visuals/07-ip-and-roadmap.png","assets/visuals/07-ip-and-roadmap.svg"],"formats":["png","svg"],"stage":"台账与法律状态核验","next":"公布号、权利要求、许可和验收映射","source":"本版公开信息图"}
 ]

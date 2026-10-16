@@ -127,8 +127,8 @@ def agent():
 
 
 def recognition():
-    im, d = canvas("农资与测土报告识别", "四类输入共享同一原则：字段有来源、缺失要留空、低置信度进入人工复核。", "04 / RECOGNITION")
-    inputs=[("农药", "二维码 / 登记信息", CORAL), ("肥料", "包装字段 / 规格", GOLD), ("助剂", "名称 / 用量 / 价格", TEAL), ("测土报告", "14项指标 / 单位", BLUE)]
+    im, d = canvas("出苗、杂草、病虫害与多模态识别", "从无人机苗情和杂草点喷，到病斑、农资和测土报告：识别结果都要进入可审核流程。", "04 / RECOGNITION")
+    inputs=[("出苗率", "多光谱 / 密度", LIME), ("杂草点喷", "检测 / 覆盖 / 处方", GOLD), ("病虫病斑", "候选 / 掩膜 / 分级", CORAL), ("农资测土", "二维码 / 14项指标", BLUE)]
     for i,(a,b,c) in enumerate(inputs):
         x=90+i*370; rounded(d,(x,300,x+300,470),PANEL,outline=c,radius=25); d.rounded_rectangle((x+95,330,x+205,420),radius=14,fill=c); d.rectangle((x+122,353,x+178,397),fill=BG); d.text((x+150,443),a,anchor="ma",fill=c,font=font(25,True)); d.text((x+150,486),b,anchor="ma",fill=PAPER,font=font(16))
         arrow(d,(x+305,385),(x+350,385),c)
@@ -136,7 +136,7 @@ def recognition():
     for i,(a,b) in enumerate(stages):
         x=140+i*360; rounded(d,(x,575,x+285,705),"#243A46",outline=TEAL if i<3 else CORAL,radius=20); d.text((x+142,610),a,anchor="ma",fill=TEAL if i<3 else CORAL,font=font(22,True)); d.text((x+142,655),b,anchor="ma",fill=PAPER,font=font(18));
         if i<3: arrow(d,(x+290,640),(x+345,640),TEAL)
-    d.text((90,770),"当前：服务化候选",fill=TEAL,font=font(20,True)); d.text((620,770),"下一步：字段级真值 + 正确留空 + 批测成本",fill=GOLD,font=font(20,True));
+    d.text((90,770),"当前：专利 + 能力资产 + 服务候选",fill=TEAL,font=font(20,True)); d.text((620,770),"下一步：独立真值 + 空间化 + 处方/任务回执",fill=GOLD,font=font(20,True));
     save(im,"04-recognition.png")
 
 
@@ -176,7 +176,7 @@ def ip_roadmap():
     for i,(a,b,c) in enumerate(stages):
         x=100+i*370; rounded(d,(x,320,x+285,520),PANEL,outline=c,radius=25); d.ellipse((x+102,350,x+183,431),fill=c); d.text((x+142,390),str(i+1),anchor="mm",fill=BG,font=font(30,True)); d.text((x+142,465),a,anchor="ma",fill=c,font=font(25,True)); d.multiline_text((x+142,555),b,anchor="ma",align="center",fill=PAPER,font=font(17),spacing=8)
         if i<3: arrow(d,(x+290,420),(x+350,420),c,width=5)
-    rounded(d,(170,700,1430,780),"#243A46",outline=GOLD,radius=20); d.text((800,740),"本版台账：7 项专利事项 + 4 项软著 · 重点补齐权属、许可、权利要求映射和产品验收",anchor="mm",fill=GOLD,font=font(21,True))
+    rounded(d,(170,700,1430,780),"#243A46",outline=GOLD,radius=20); d.text((800,740),"本版台账：4 项已授权 + 1 项授权通知 + 2 项申请中 + 4 项软著 · 补齐映射与验收",anchor="mm",fill=GOLD,font=font(21,True))
     save(im,"07-ip-and-roadmap.png")
 
 

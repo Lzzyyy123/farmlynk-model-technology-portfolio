@@ -19,6 +19,7 @@ VISUALS = [
     "04-recognition.png", "05-land-assessment.png", "06-research-to-product.png",
     "07-ip-and-roadmap.png",
 ]
+SVG_VISUALS = [name.replace(".png", ".svg") for name in VISUALS]
 
 
 def fail(message: str, errors: list[str]) -> None:
@@ -31,6 +32,9 @@ def main() -> None:
         if not path.exists():
             fail(f"missing:{path.relative_to(BASE)}", errors)
     for name in VISUALS:
+        if not (BASE / "assets" / "visuals" / name).exists():
+            fail(f"missing:assets/visuals/{name}", errors)
+    for name in SVG_VISUALS:
         if not (BASE / "assets" / "visuals" / name).exists():
             fail(f"missing:assets/visuals/{name}", errors)
     for name in ["fieldbcq-metrics.csv", "fieldbcq-dataset-split.csv"]:
@@ -50,11 +54,13 @@ def main() -> None:
     areas = load("technology-areas.json")
     topics = load("topics.json")
     ip = load("intellectual-property.json")
+    inventory = load("model-inventory.json")
     sources = load("external-sources.json")
     figures = load("figures.json")
     if len(areas) != 10: fail(f"technology-areas-count:{len(areas)}", errors)
-    if len(topics) != 16: fail(f"topics-count:{len(topics)}", errors)
+    if len(topics) != 17: fail(f"topics-count:{len(topics)}", errors)
     if len(ip) != 11: fail(f"ip-count:{len(ip)}", errors)
+    if len(inventory) != 15: fail(f"model-inventory-count:{len(inventory)}", errors)
     if len(sources) != 3: fail(f"sources-count:{len(sources)}", errors)
     if len(figures) != 7: fail(f"figures-count:{len(figures)}", errors)
 
@@ -89,7 +95,7 @@ def main() -> None:
     report = {
         "passed": not errors,
         "scope": "public portfolio consistency check",
-        "counts": {"technology_areas": len(areas), "topics": len(topics), "ip": len(ip), "sources": len(sources), "visuals": len(figures)},
+        "counts": {"technology_areas": len(areas), "topics": len(topics), "ip": len(ip), "model_inventory": len(inventory), "sources": len(sources), "visuals": len(figures)},
         "errors": errors,
     }
     (BASE / "data" / "validation-report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

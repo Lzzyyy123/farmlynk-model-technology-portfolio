@@ -6,11 +6,13 @@
 
 ## 2. 日常维护
 
+- 模型或产品变化时同步 `data/model-inventory.json`、资产清单和对应技术章节。
 - 技术能力变化时更新 `data/technology-areas.json` 和相关章节。
 - 课题状态变化时同步 `data/topics.json`、`data/topic-plans.json` 和路线图章节。
 - 指标新增或修订时更新 CSV、研究章节和证据登记，并保留历史口径说明。
 - 专利或软著状态变化时更新公开台账，法律状态以正式文件为准。
-- 视觉表达变化时运行 `scripts/render_visuals.py`，检查 7 张 PNG 的文字、比例和可读性。
+- 专利或软著状态变化时同步 `data/intellectual-property.json` 和 `data/patent-register.csv`，再检查技术映射。
+- 视觉表达变化时运行 `scripts/render_visuals.py` 和 `scripts/render_svgs.py`，检查 7 组 PNG/SVG 的文字、比例和可读性。
 - 报告变化时重新生成 `deliverables/` 中的 Markdown、Word 和 PDF。
 
 ## 3. 发布前检查
